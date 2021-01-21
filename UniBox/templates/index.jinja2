@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Html Generated</title>
+    <meta name="description" content="Figma htmlGenerator">
+    <meta name="author" content="htmlGenerator">
+    <link href="https://fonts.googleapis.com/css?family=Post+No Bills Jaffna SemiBold&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{request.static_url('UniBox:static/styles.css')}}">
+    <style>
+        /*
+          Figma Background for illustrative/preview purposes only.
+          You can remove this style tag with no consequence
+        */
+        body {
+            background: #E5E5E5;
+        }
+    </style>
+
+</head>
+
+<body>
+<div id="e2_4">
+    <div id="e2_5">
+        <div id="e2_6"></div>
+        <div id="e2_7"><span id="e2_8">Uni Bot</span><span id="e2_9">Телеграм бот</span></div>
+        <div id="e2_10"><a href="#e126_2"><span id="e2_11" >О боте</span></a><a href="#e2_35"><span id="e2_12">Наши отзывы</span></a><a href="#e2_172"><span id="e2_13">Демонстрация работы</span></a><a href="#e2_190"><span
+                id="e2_14" >Контакты</span></a></div>
+        <div id="e2_16"><span id="e2_17">Универсальный помощник в Telegram</span>
+            <div id="e2_18">
+                <div id="e2_19"></div>
+                <div id="e2_20"></div>
+            </div>
+            <a href="https://t.me/DistantHelperBot"><span id="e2_22">@DistantHelperBot</span></a>
+            <div id="e2_29"></div>
+        </div>
+    </div>
+    <span id="e2_30">II</span><span id="e2_31">III</span><span id="e2_32">IV</span><span id="e2_33">V</span>
+    <div id="e2_34"><span id="e2_35">Наши отзывы</span>
+        <div id="e5_0"></div>
+    </div>
+    <div id="e2_44"><span id="e2_83">Большая база вопросов</span><span id="e2_84">Мгновенный ответ</span><span
+            id="e2_85">Возможность общения</span><span id="e2_86">Постоянная модерация</span>
+        <div id="e2_87">
+            <div id="e3_2"></div>
+        </div>
+        <div id="e3_0"></div>
+        <div id="e4_0"></div>
+    </div>
+    <div id="e2_160">
+        <div id="e2_161"></div>
+        <span id="e2_162">Топ задаваемых вопросов:</span></div>
+    <div id="e2_172">
+        <video width="719px" height=650px controls>
+            <source src="{{request.static_url('UniBox:static/IMG_3609.MP4')}}" type="video/mp4">
+        </video>
+    </div>
+    <div id="e2_179">
+        <form action="/info" method="post">
+        <div id="e2_181">
+            <input type="text" id="e2_182" name="name" width="255" height="56.41" placeholder="Ваше имя">
+        </div>
+        <div id="e2_184">
+            <input type="text" id="e2_185" name="phone_number" width="255" height="56.41" placeholder="Ваш телефон">
+        </div>
+        <div id="e126_3">
+            <input type="text" id="e126_4" name="email" placeholder="Ваша почта">
+        </div>
+        <div id="e2_187">
+            <input width="255" height="56.41" type="submit" id="e2_188" value="Отправить заявку">
+           </div>
+        </form>
+        <span id="e2_190">Есть вопросы? Мы вам напишем:</span>
+    </div>
+    <div id="e3_1"></div>
+    <div id="e5_1"></div>
+    <div id="e5_2"></div>
+    <div id="e5_3"></div>
+    <span id="e126_2">Бот Юни - это: </span><span id="e126_6">Демонстрация работы</span>
+    <span id="e126_7">
+    {% block content %}
+        
+    {% endblock %}
+    </span>
+    <div id="e131_12661">
+        <table border="1" width=1237px height=469px>
+    <tr>
+        <td>Вопрос</td>
+        <td>Ответ на ворос</td>
+    </tr>
+        {% for Q_A in Q_As %}
+        <tr>
+            <td>{{ Q_A.question }}</td>
+            <td>{{ Q_A.answer }}</td>
+        </tr>
+        {% endfor %}
+</table>
+</div>
+    </div>
+</div>
+</body>
+</html>

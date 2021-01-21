@@ -1,0 +1,3 @@
+[run]
+source = UniBox
+omit = UniBox/test*
