@@ -1,5 +1,13 @@
 {% extends "index.jinja2" %}
 
 {% block content %}
-    Заявка отправлена!
+    <div class="data_info">
+    {% if  data_info.info_id == '' %}
+        <span id="e126_7"> {{ data.info.info_id }}</span>
+    {% elif data_info.info_id == 'Ошибка' %}
+        <span id="e126_7"> {{ data.info.info_id }}</span>
+    {% else %}
+        <span id="e126_7"> {{ data.info.info_id }}</span>
+    {% endif %}
+    </div>
 {% endblock content %}

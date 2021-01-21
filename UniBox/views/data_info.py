@@ -8,6 +8,10 @@ from sqlalchemy.exc import DBAPIError
 
 @view_config(route_name='home_info', renderer='../templates/test.jinja2')
 def make_data(request):
+    from UniBox import models
+    query = request.dbsession.query(models.QA)
+    QAndAs = query.filter(models.QA.count >= 25)
+
     data_info = parse_data_info(request.params)
     data_info.info_id = ''
 
@@ -18,4 +22,4 @@ def make_data(request):
         order_id = register_data(request, data_info)
         data_info.order_id = 'Заявка отправлена!'
 
-    return {'order_info': data_info}
+    return {'data_info': data_info,'Q_As': QAndAs}
