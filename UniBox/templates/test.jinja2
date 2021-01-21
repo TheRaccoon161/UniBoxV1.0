@@ -3,11 +3,11 @@
 {% block content %}
     <div class="data_info">
     {% if  data_info.info_id == '' %}
-        <span id="e126_7"> {{ data.info.info_id }}</span>
+        <span id="e126_7"> {{ data_info.info_id }}</span>
     {% elif data_info.info_id == 'Ошибка' %}
-        <span id="e126_7"> {{ data.info.info_id }}</span>
+        <span id="e126_7"> {{ data_info.info_id }}</span>
     {% else %}
-        <span id="e126_7"> {{ data.info.info_id }}</span>
+        <span id="e126_7"> {{ data_info.info_id }}</span>
     {% endif %}
     </div>
 {% endblock content %}
