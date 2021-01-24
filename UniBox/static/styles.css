@@ -452,8 +452,8 @@ background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8
 	left:0px;
 	top:86px;
 }
-#e2_182 { 
-	background-color:rgba(255, 255, 255, 1);
+#e2_182 {
+	background-color: rgb(255, 255, 255);
 	opacity:0.20000000298023224;
 	width:261px;
 	height:56.41891860961914px;
@@ -461,7 +461,7 @@ background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8
 	left:0px;
 	top:0px;
 }
-#e2_183 { 
+#e2_183 {
 	color:rgba(190.18750101327896, 190.18750101327896, 190.18750101327896, 1);
 	opacity:1;
 	width:65.5058822631836px;

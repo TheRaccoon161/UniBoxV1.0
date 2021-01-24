@@ -22,4 +22,4 @@ def make_data(request):
         order_id = register_data(request, data_info)
         data_info.order_id = 'Заявка отправлена!'
 
-    return {'data_info': data_info,'Q_As': QAndAs}
+    return {'data_info': data_info, 'Q_As': QAndAs}

@@ -8,6 +8,7 @@ import zope.sqlalchemy
 from .mymodel import MyModel  # flake8: noqa
 from .Q_A import QA
 from .DATA import Data
+from .admin import User
 
 # run configure_mappers after defining all of the models to ensure
 # all relationships can be setup
